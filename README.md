@@ -1,14 +1,16 @@
 helloW01
 ========
 
-Scratch Application which Clears the display, sets the cursor position and draws "Hello World!"
+Scratch:
+
+Application which Clears the display, sets the cursor position and draws "Hello World!"
 
 ### Project Information
 ```
 Type              : Scratch
 Version           : 01.0
 Author            : myke predko
-Firmware          : 41
+Firmware          : 42
 ```
 
 ### Release History:
