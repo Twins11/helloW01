@@ -15,55 +15,6 @@
         <next>
           <block type="oled_drawtext" id="5">
             <field name="TEXT">quack</field>
-            <next>
-              <block type="movement_forward" id="6">
-                <next>
-                  <block type="robot_delay" id="7" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="8">
-                        <field name="NUM">2000</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_left" id="9">
-                        <next>
-                          <block type="robot_delay" id="10" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="11">
-                                <field name="NUM">2000</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="led_select" id="12" inline="true">
-                                <field name="ACTION">ON</field>
-                                <value name="LED">
-                                  <block type="math_number" id="13">
-                                    <field name="NUM">6</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="movement_stutter" id="14">
-                                    <next>
-                                      <block type="robot_delay" id="15" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="16">
-                                            <field name="NUM">2000</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
         </next>
       </block>
