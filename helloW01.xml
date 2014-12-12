@@ -1,20 +1,74 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="410" x="-177" y="-125">
+  <block type="oled_cleardisplay" id="1" x="-177" y="-125">
     <next>
-      <block type="oled_setcursor" id="411" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="412">
+          <block type="math_number" id="3">
             <field name="NUM">10</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="413">
+          <block type="math_number" id="4">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="414">
-            <field name="TEXT">Hello World!</field>
+          <block type="oled_drawtext" id="5">
+            <field name="TEXT">quack</field>
+            <next>
+              <block type="oled_drawnumber" id="14" inline="true">
+                <value name="NUMBER">
+                  <block type="math_number" id="21">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_forward" id="39">
+                    <next>
+                      <block type="robot_delay" id="41" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="48">
+                            <field name="NUM">2000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_left" id="72">
+                            <next>
+                              <block type="robot_delay" id="74" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="62">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="led_select" id="83" inline="true">
+                                    <field name="ACTION">ON</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="55">
+                                        <field name="NUM">6</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="robot_delay" id="85" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="92">
+                                            <field name="NUM">2000</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
