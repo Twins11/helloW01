@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="-177" y="-125">
+  <block type="oled_cleardisplay" id="1" x="-252" y="-119">
     <next>
       <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
@@ -16,37 +16,37 @@
           <block type="oled_drawtext" id="5">
             <field name="TEXT">quack</field>
             <next>
-              <block type="movement_forward" id="39">
+              <block type="movement_forward" id="6">
                 <next>
-                  <block type="robot_delay" id="41" inline="true">
+                  <block type="robot_delay" id="7" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="48">
+                      <block type="math_number" id="8">
                         <field name="NUM">2000</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_left" id="72">
+                      <block type="movement_left" id="9">
                         <next>
-                          <block type="robot_delay" id="74" inline="true">
+                          <block type="robot_delay" id="10" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="62">
+                              <block type="math_number" id="11">
                                 <field name="NUM">2000</field>
                               </block>
                             </value>
                             <next>
-                              <block type="led_select" id="83" inline="true">
+                              <block type="led_select" id="12" inline="true">
                                 <field name="ACTION">ON</field>
                                 <value name="LED">
-                                  <block type="math_number" id="55">
+                                  <block type="math_number" id="13">
                                     <field name="NUM">6</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_stutter" id="107">
+                                  <block type="movement_stutter" id="14">
                                     <next>
-                                      <block type="robot_delay" id="109" inline="true">
+                                      <block type="robot_delay" id="15" inline="true">
                                         <value name="DELAY">
-                                          <block type="math_number" id="116">
+                                          <block type="math_number" id="16">
                                             <field name="NUM">2000</field>
                                           </block>
                                         </value>
